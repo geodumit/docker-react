@@ -10,7 +10,6 @@ script:
         - docker run -e CI=true geodumit/docker-react npm run test 
 
 deploy:
-        skip_cleanup: true
         provider: elasticbeanstalk
         region: "us-east-2"
         app: "docker-react"
